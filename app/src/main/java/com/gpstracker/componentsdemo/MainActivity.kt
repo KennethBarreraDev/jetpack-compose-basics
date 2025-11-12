@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.gpstracker.componentsdemo.components.BasicArrangementComponents
+import com.gpstracker.componentsdemo.components.CustomModifierBox
+import com.gpstracker.componentsdemo.components.ModifierLayoutBox
 import com.gpstracker.componentsdemo.ui.theme.ComponentsDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,6 +34,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen( modifier: Modifier = Modifier) {
-    BasicArrangementComponents()
+    //BasicArrangementComponents()
+    ModifierLayoutBox()
 }
 
