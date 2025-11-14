@@ -8,11 +8,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.ContentDrawScope
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.node.DrawModifierNode
 import androidx.compose.ui.unit.dp
 
 //Modifier factory, it generate a modifier chaining a list ot bult-in modifiers
 fun Modifier.myBackground(color: Color) = padding(10.dp).background(color = Color.Red)
+
 
 @Composable
 fun Modifier.fade(enable: Boolean): Modifier{
@@ -31,3 +34,13 @@ fun CustomModifiersComponents(){
 fun FactoryModifierExample(){
     Text("Custom modifier example", modifier = Modifier.myBackground(Color.Red).fade(enable = true))
 }
+
+
+
+
+
+
+
+
+
+
